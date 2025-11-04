@@ -15,7 +15,7 @@ CU_SOURCES = $(wildcard *.cu)
 EXECUTABLES = $(CU_SOURCES:.cu=)
 
 # Energy measurement programs that need NVML
-ENERGY_PROGRAMS = sharedmemwarpvec4_energy sharedmemwarpvec4_energy_detailed
+ENERGY_PROGRAMS = softmax_sharedmem_energy softmax_sharedmemwarp_energy sharedmemwarpvec4_energy
 
 # Regular programs (all except energy measurement programs)
 REGULAR_PROGRAMS = $(filter-out $(ENERGY_PROGRAMS), $(EXECUTABLES))
