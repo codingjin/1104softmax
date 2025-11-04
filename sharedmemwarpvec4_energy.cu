@@ -179,7 +179,7 @@ int main(int argc, char** argv)
     // Energy measurement for 100 rounds
     // -----------------------------------------------------
     const int RUN_ITERS = 1000;
-    const int NUM_ROUNDS = 100;
+    const int NUM_ROUNDS = 1000;
 
     std::vector<double> energy_measurements;
     energy_measurements.reserve(NUM_ROUNDS);
