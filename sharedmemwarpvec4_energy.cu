@@ -215,10 +215,11 @@ int main(int argc, char** argv)
         // Energy = Power × Time
         double energy_j = avg_power_w * duration_s;
         energy_measurements.push_back(energy_j);
-
+        /*
         if ((round + 1) % 10 == 0) {
             printf("Completed %d/%d rounds\n", round + 1, NUM_ROUNDS);
         }
+        */
     }
 
     // Calculate statistics
